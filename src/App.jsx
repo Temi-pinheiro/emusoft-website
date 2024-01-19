@@ -3,7 +3,7 @@ import { NavBar } from './components/Nav';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Services } from './components/Services';
-import { Projects } from './components/Projects';
+// import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { MobileNav } from './components/MobileNav';
@@ -23,7 +23,7 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
       <Footer />
     </main>
