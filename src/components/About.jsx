@@ -1,15 +1,15 @@
 export const About = () => {
   return (
-    <div className='w-full'>
-      <div className=' wrapper pad-left flex items-end mt-[104px] justify-between'>
-        <div className='max-w-[550px]'>
-          <h2 className='text-zinc-900 text-[40px] font-bold leading-[56px]'>
+    <div id='about' className='w-full'>
+      <div className=' wrapper pad-left flex max-md:flex-col items-end pt-[70px] xl:mt-[104px] justify-between'>
+        <div className='max-w-[550px] max-xl:px-4'>
+          <h2 className='text-zinc-900 text-xl md:text-[40px] font-bold xl:leading-[56px]'>
             About us
           </h2>
-          <h3 className='max-w-[468px] text-indigo-900 text-[40px] font-bold leading-[56px] mt-8'>
+          <h3 className='max-w-[468px] text-indigo-900  xl:text-[40px] font-bold xl:leading-[56px] mt-8'>
             We turn your ideas into cutting-edge technologies
           </h3>
-          <p className='mt-[33px] text-neutral-800 text-xl'>
+          <p className='mt-[33px] text-neutral-800 text-sm xl:text-xl'>
             We believe that technology has the power to change the world. We are
             a team of passionate software developers and technology enthusiasts
             who are dedicated to creating innovative and impactful solutions for
@@ -28,7 +28,7 @@ export const About = () => {
             their expectations.
           </p>
         </div>
-        <div className='max-w-[658px] h-[712px]'>
+        <div className='max-w-[658px] h-[712px] max-xl:mt-8'>
           <img
             src='/guy.jpeg'
             alt='guy at a tech conference taking notes'

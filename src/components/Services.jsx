@@ -32,23 +32,23 @@ export const Services = () => {
     },
   ];
   return (
-    <div className='w-full'>
-      <div className=' wrapper pad-both flex flex-col mt-[240px] gap-y-[54px]'>
-        <h2 className='text-zinc-900 text-[40px] font-bold leading-[56px]'>
+    <div id='services' className='w-full max-xl:px-4'>
+      <div className=' wrapper pad-both flex flex-col pt-[60px] xl:pt-[240px] gap-y-2 md:gap-y-[54px]'>
+        <h2 className='text-zinc-900 text-xl md:text-[40px] font-bold leading-[56px]'>
           Our Services
         </h2>
-        <div className='grid xl:grid-cols-3 gap-x-[95px] gap-y-[100px]'>
+        <div className='grid grid-cols-2 xl:grid-cols-3 gap-x-[42px] xl:gap-x-[95px] gap-y-6 xl:gap-y-[100px]'>
           {items.map((item, index) => (
             <div key={index} className='flex flex-col gap-y-6'>
-              <div className='flex gap-x-6'>
-                <span className='w-14 h-14 flex shrink-0 items-center justify-center bg-blue-100 rounded-sm'>
+              <div className='flex max-md:items-center gap-x-2 md:gap-x-6'>
+                <span className='w-6 md:w-14 h-6 md:h-14 max-md:p-1 flex shrink-0 items-center justify-center bg-blue-100 rounded-sm'>
                   <img src={item.icon} alt={item.title} />{' '}
                 </span>
-                <h4 className='text-[#352784] text-2xl font-bold leading-[33.60px]'>
+                <h4 className='text-[#352784] text-base md:text-2xl font-bold md:leading-[33.60px]'>
                   {item.title}
                 </h4>
               </div>
-              <p className='text-stone-800 text-xl leading-[30px]'>
+              <p className='text-stone-800 text-sm xl:text-xl md:leading-[30px]'>
                 {item.desc}
               </p>
             </div>
