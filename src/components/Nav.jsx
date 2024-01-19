@@ -23,14 +23,14 @@ export const NavBar = () => {
         ScrollTrigger.create({
           trigger: '#nav',
           start: '860px',
-          end: '2000px',
+          end: '200px',
           scrub: 2,
           animation,
         });
         ScrollTrigger.create({
           trigger: '#nav',
           start: '860px',
-          end: '2000px',
+          end: '200px',
           scrub: true,
           animation: makeFixed,
         });
