@@ -48,7 +48,7 @@ export const Contact = () => {
     }
   };
   return (
-    <div id='contact' className='w-full mt-[80px]'>
+    <div id='contact' className='w-full'>
       <div className='wrapper md:flex'>
         <div className='2xl:max-w-[820px] hero w-full'>
           <form onSubmit={sendEmail} className='pt-[91px] pb-[123px]'>
