@@ -10,28 +10,29 @@ export const NavBar = () => {
     () => {
       mm.add('(min-width: 1280px)', () => {
         gsap.set('#nav', { opacity: 0 });
-        const animation = gsap.to('#withBg', {
-          autoAlpha: 1,
-          background: 'rgba(53, 39, 132, .8)',
-          y: 20,
-        });
+        // const animation = gsap.to('#withBg', {
+        //   autoAlpha: 1,
+        //   background: 'rgba(53, 39, 132, .8)',
+        //   y: 20,
+        // });
         const makeFixed = gsap.to('#nav', {
           position: 'fixed',
-          opacity: 1,
+          autoAlpha: 1,
+          background: 'rgba(53, 39, 132, .8)',
         });
 
+        // ScrollTrigger.create({
+        //   trigger: '#nav',
+        //   start: '860px',
+        //   end: '200px',
+        //   scrub: 2,
+        //   animation,
+        // });
         ScrollTrigger.create({
           trigger: '#nav',
           start: '860px',
           end: '200px',
           scrub: 2,
-          animation,
-        });
-        ScrollTrigger.create({
-          trigger: '#nav',
-          start: '860px',
-          end: '200px',
-          scrub: true,
           animation: makeFixed,
         });
       });
@@ -40,7 +41,7 @@ export const NavBar = () => {
   );
   return (
     <>
-      <div className='inset-0 absolute max-xl:hidden text-white z-10 w-full'>
+      <div className='inset-0 h-fit absolute max-xl:hidden text-white z-[20] w-full'>
         <nav className='wrapper pad-both flex items-center py-10 justify-between rounded-[20px]'>
           <div>
             <svg
@@ -94,12 +95,12 @@ export const NavBar = () => {
       </div>
       <div
         id='nav'
-        className='inset-0 absolute max-xl:hidden text-white z-10 w-full'
+        className='inset-0 absolute h-fit max-xl:hidden text-white z-10 w-full backdrop-blur-md 2xl:backdrop-blur-xl'
       >
         <nav
           id='withBg'
           // style={{ backgroundColor: backgroundColorTemplate }}
-          className='max-w-[1200px] 2xl:max-w-[1440px] mx-auto px-10 py-5 backdrop-blur-md 2xl:backdrop-blur-xl flex items-center justify-between rounded-[20px]'
+          className='wrapper pad-both py-5 flex items-center justify-between '
         >
           <div>
             <svg

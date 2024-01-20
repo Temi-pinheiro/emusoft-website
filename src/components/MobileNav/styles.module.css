@@ -1,6 +1,6 @@
 .nav {
   /* background: rgba(78, 28, 132, 1); */
-  @apply flex md:hidden fixed inset-0 z-50 w-full h-[70px] items-end pb-6 px-6 justify-between overflow-y-clip;
+  @apply flex xl:hidden fixed inset-0 z-50 w-full h-[70px] items-end pb-6 px-6 justify-between overflow-y-clip;
 }
 
 .btns_container {

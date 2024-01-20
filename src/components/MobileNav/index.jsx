@@ -8,8 +8,8 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
 const modalBodyVariants = {
-  initial: { x: 400 },
-  remove: { x: 400 },
+  initial: { x: window.innerWidth },
+  remove: { x: window.innerWidth },
   animate: { x: 0 },
 };
 
@@ -19,7 +19,7 @@ export const MobileNav = () => {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(
     () => {
-      mm.add('(max-width: 1280px)', () => {
+      mm.add('(max-width: 1279px)', () => {
         // gsap.set('#nav', { opacity: 0 });
 
         ScrollTrigger.create({
@@ -58,7 +58,7 @@ export const MobileNav = () => {
   }, [window.location.pathname]);
 
   return (
-    <div className='md:hidden'>
+    <div className='xl:hidden'>
       <div id='mobilenav' className={styles.nav}>
         <a href='/' className='overflow-y-clip'>
           <motion.h6

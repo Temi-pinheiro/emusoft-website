@@ -183,7 +183,7 @@ body {
 }
 
 .pad-left {
-  @apply xl:pl-20 ds:pl-40 2xl:pl-0;
+  @apply max-sm:px-4 xl:pl-20 ds:pl-40 2xl:pl-0;
 }
 .pad-both {
   @apply xl:px-20 ds:px-40 2xl:px-0;

@@ -2,9 +2,9 @@ export const Hero = () => {
   return (
     <div
       id='home'
-      className='w-full h-[500px] xl:h-[860px] hero bg-opacity-70 flex items-center relative overflow-clip'
+      className='w-full h-[500px] xl:h-[860px] hero bg-opacity-70 flex relative overflow-clip'
     >
-      <div className='wrapper pad-left flex flex-col xl:flex-row items-start 2xl:justify-between pt-[78px] xl:pt-[280px] h-full text-white relative z-2'>
+      <div className='wrapper pad-left flex flex-col xl:flex-row items-center 2xl:justify-between pt-[78px] xl:pt-[100px] h-full text-white relative z-10'>
         <div className='xl:max-w-[520px] w-full max-xl:text-center max-xl:flex flex-col items-center '>
           <h1 className='text-2xl xl:text-[52px] leading-[28.80px] xl:leading-[62.40px] max-xl:max-w-[245px] font-bold text-white'>
             Creating Innovative & Impactful Solutions
@@ -13,7 +13,10 @@ export const Hero = () => {
             We use the latest technology and methodologies to develop
             personalized software solutions that meet your specific needs.
           </p>
-          <a className='bg-[#14A6E3] text-xl font-bold w-[205px] flex justify-center py-4 mt-[18px] xl:mt-[72px] rounded-lg'>
+          <a
+            href='#contact'
+            className='bg-[#14A6E3] text-xl font-bold w-[205px] flex justify-center py-4 mt-[18px] xl:mt-[72px] rounded-lg'
+          >
             Let’s Talk
           </a>
         </div>
