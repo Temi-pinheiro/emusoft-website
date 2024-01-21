@@ -2,37 +2,39 @@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
 export const NavBar = () => {
   gsap.registerPlugin(ScrollTrigger);
   const mm = gsap.matchMedia();
+  gsap.registerPlugin(ScrollToPlugin);
+
+  const scrollTo = (e, target) => {
+    e.preventDefault();
+    let scrollTarget = document.querySelector(target);
+
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: scrollTarget,
+      ease: 'power2.inOut',
+    });
+  };
   useGSAP(
     () => {
       mm.add('(min-width: 1280px)', () => {
         gsap.set('#nav', { opacity: 0 });
-        // const animation = gsap.to('#withBg', {
-        //   autoAlpha: 1,
-        //   background: 'rgba(53, 39, 132, .8)',
-        //   y: 20,
-        // });
+
         const makeFixed = gsap.to('#nav', {
           position: 'fixed',
           autoAlpha: 1,
           background: 'rgba(53, 39, 132, .8)',
         });
 
-        // ScrollTrigger.create({
-        //   trigger: '#nav',
-        //   start: '860px',
-        //   end: '200px',
-        //   scrub: 2,
-        //   animation,
-        // });
         ScrollTrigger.create({
           trigger: '#nav',
           start: '860px',
           end: '200px',
-          scrub: 2,
+          scrub: 1,
           animation: makeFixed,
         });
       });
@@ -60,30 +62,35 @@ export const NavBar = () => {
           </div>
           <div className='flex items-center gap-x-[51px]'>
             <a
+              onClick={(e) => scrollTo(e, '#home')}
               href='#home'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
               Home
             </a>
             <a
+              onClick={(e) => scrollTo(e, '#about')}
               href='#about'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
               About
             </a>
             <a
+              onClick={(e) => scrollTo(e, '#services')}
               href='#services'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
               Services
             </a>
             <a
+              onClick={(e) => scrollTo(e, '#projects')}
               href='#projects'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
               Projects
             </a>
             <a
+              onClick={(e) => scrollTo(e, '#contact')}
               href='#contact'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
@@ -119,30 +126,35 @@ export const NavBar = () => {
           </div>
           <div className='flex items-center gap-x-[51px]'>
             <a
+              onClick={(e) => scrollTo(e, '#home')}
               href='#home'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
               Home
             </a>
             <a
+              onClick={(e) => scrollTo(e, '#about')}
               href='#about'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
               About
             </a>
             <a
+              onClick={(e) => scrollTo(e, '#services')}
               href='#services'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
               Services
             </a>
             <a
+              onClick={(e) => scrollTo(e, '#projects')}
               href='#projects'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >
               Projects
             </a>
             <a
+              onClick={(e) => scrollTo(e, '#contact')}
               href='#contact'
               className='hover:text-[#0CBAF1] transition duration-200 ease-in-out'
             >

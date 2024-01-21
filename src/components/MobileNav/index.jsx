@@ -155,16 +155,13 @@ export const MobileNav = () => {
                 </a>
               </li>
               <li>
-                <a onClick={(e) => scrollTo(e, '#about')} href='/#works'>
+                <a onClick={(e) => scrollTo(e, '#about')} href='/#about'>
                   About
                 </a>
               </li>
 
               <li>
-                <a
-                  onClick={(e) => scrollTo(e, '#services')}
-                  href='/#experience'
-                >
+                <a onClick={(e) => scrollTo(e, '#services')} href='/#services'>
                   Services
                 </a>
               </li>

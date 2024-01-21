@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <footer className='w-full md:h-[343px] flex items-center'>
-      <div className='wrapper max-md:py-[56px] max-md:pl-[41px] pad-both flex max-md:flex-col gap-y-3 justify-between'>
+    <footer className='w-full xl:h-[343px] flex items-center'>
+      <div className='wrapper max-xl:py-[56px] max-xl:pl-[41px] pad-both flex max-xl:flex-col gap-y-3 md:gap-y-5 justify-between'>
         <div className='flex flex-col gap-y-[5px]'>
           <h4>
             <svg

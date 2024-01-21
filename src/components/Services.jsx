@@ -40,7 +40,7 @@ export const Services = () => {
         <div className='grid grid-cols-2 xl:grid-cols-3 gap-x-[42px] xl:gap-x-[95px] gap-y-6 xl:gap-y-[100px]'>
           {items.map((item, index) => (
             <div key={index} className='flex flex-col gap-y-6'>
-              <div className='flex max-md:items-center gap-x-2 md:gap-x-6'>
+              <div className='flex max-xl:items-center gap-x-2 md:gap-x-6'>
                 <span className='w-6 md:w-14 h-6 md:h-14 max-md:p-1 flex shrink-0 items-center justify-center bg-blue-100 rounded-sm'>
                   <img src={item.icon} alt={item.title} />{' '}
                 </span>
@@ -48,7 +48,7 @@ export const Services = () => {
                   {item.title}
                 </h4>
               </div>
-              <p className='text-stone-800 text-sm xl:text-xl md:leading-[30px]'>
+              <p className='text-stone-800 text-sm md:text-xl md:leading-[30px]'>
                 {item.desc}
               </p>
             </div>

@@ -34,7 +34,7 @@ export const Projects = () => {
   return (
     <div
       id='projects'
-      className='bg-[#F1FAFE] flex flex-col items-center justify-center h-[832px] mt-[63px] md:mt-40  overflow-x-clip'
+      className='bg-[#F1FAFE] flex flex-col items-center justify-center h-[932px] mt-[63px] md:mt-40  overflow-x-clip'
     >
       <h3 className='text-center text-[#352784] font-bold text-xl sm:text-[30px] md:text-[40px] xl:leading-[56px] w-full'>
         Latest Projects

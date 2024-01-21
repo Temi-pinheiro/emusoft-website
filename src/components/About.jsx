@@ -6,10 +6,10 @@ export const About = () => {
           <h2 className='text-zinc-900 text-xl sm:text-[30px] md:text-[40px] font-bold xl:leading-[56px]'>
             About us
           </h2>
-          <h3 className='max-w-[468px] text-indigo-900 sm:text-lg xl:text-[40px] font-bold xl:leading-[56px] mt-8'>
+          <h3 className='max-w-[468px] text-indigo-900 sm:text-lg md:text-xl xl:text-[40px] font-bold xl:leading-[56px] mt-8'>
             We turn your ideas into cutting-edge technologies
           </h3>
-          <p className='mt-[33px] text-neutral-800 text-sm sm:text-base xl:text-xl'>
+          <p className='mt-[33px] text-neutral-800 text-sm sm:text-base md:text-lg xl:text-xl'>
             We believe that technology has the power to change the world. We are
             a team of passionate software developers and technology enthusiasts
             who are dedicated to creating innovative and impactful solutions for
@@ -28,7 +28,7 @@ export const About = () => {
             their expectations.
           </p>
         </div>
-        <div className='xl:max-w-[658px] w-full h-[200px] sm:h-[400px] md:h-[500px] xl:h-[712px] max-xl:mt-8'>
+        <div className='md:max-w-[50%] xl:max-w-[658px] w-full h-[200px] sm:h-[400px] md:h-[600px] xl:h-[712px] max-md:mt-8'>
           <img
             src='/guy.jpeg'
             alt='guy at a tech conference taking notes'
