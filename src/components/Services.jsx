@@ -37,10 +37,10 @@ export const Services = () => {
         <h2 className='text-zinc-900 text-xl md:text-[40px] font-bold leading-[56px]'>
           Our Services
         </h2>
-        <div className='grid grid-cols-2 xl:grid-cols-3 gap-x-[42px] xl:gap-x-[95px] gap-y-6 xl:gap-y-[100px]'>
+        <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-x-[42px] xl:gap-x-[95px] gap-y-6 xl:gap-y-[100px]'>
           {items.map((item, index) => (
-            <div key={index} className='flex flex-col gap-y-6'>
-              <div className='flex max-xl:items-center gap-x-2 md:gap-x-6'>
+            <div key={index} className='flex flex-col gap-y-2 md:gap-y-6'>
+              <div className='flex flex-col md:flex-row md:items-center gap-x-2 md:gap-x-6'>
                 <span className='w-6 md:w-14 h-6 md:h-14 max-md:p-1 flex shrink-0 items-center justify-center bg-blue-100 rounded-sm'>
                   <img src={item.icon} alt={item.title} />{' '}
                 </span>

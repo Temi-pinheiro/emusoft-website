@@ -31,8 +31,8 @@ export const Footer = () => {
         <div className='flex flex-col md:gap-y-2 max-w-[118px]'>
           <p className='font-black max-md:text-sm'>ADDRESS</p>
           <span className='max-md:text-xs'>
-            <a href='mailto:info@emusoft.com'>info@emusoft.com</a>
-            <a href='tel:+971 55 666 2948'>+971 55 666 2948</a>
+            <span>ARLINGTON, TX 76011</span>
+            <a href='mailto:info@emusoft.co'>info@emusoft.co</a>
           </span>
         </div>
         <div className='flex items-center'>

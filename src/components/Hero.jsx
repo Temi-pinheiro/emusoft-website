@@ -1,3 +1,5 @@
+import { CTA } from './Cta';
+
 export const Hero = () => {
   return (
     <div
@@ -13,12 +15,7 @@ export const Hero = () => {
             We use the latest technology and methodologies to develop
             personalized software solutions that meet your specific needs.
           </p>
-          <a
-            href='#contact'
-            className='bg-[#14A6E3] text-xl font-bold w-[205px] flex justify-center py-4 mt-[18px] md:mt-[30px] xl:mt-[72px] rounded-lg'
-          >
-            Let’s Talk
-          </a>
+          <CTA />
         </div>
         <div className='relative max-md:mx-auto max-md:h-full max-md:w-[70%] max-md:mt-10'>
           <img

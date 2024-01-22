@@ -2,23 +2,12 @@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import ScrollToPlugin from 'gsap/ScrollToPlugin';
+import { scrollTo } from '../helpers/scroller';
 
 export const NavBar = () => {
   gsap.registerPlugin(ScrollTrigger);
   const mm = gsap.matchMedia();
-  gsap.registerPlugin(ScrollToPlugin);
 
-  const scrollTo = (e, target) => {
-    e.preventDefault();
-    let scrollTarget = document.querySelector(target);
-
-    gsap.to(window, {
-      duration: 1.5,
-      scrollTo: scrollTarget,
-      ease: 'power2.inOut',
-    });
-  };
   useGSAP(
     () => {
       mm.add('(min-width: 1280px)', () => {
