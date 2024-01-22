@@ -41,7 +41,7 @@ export const Services = () => {
           {items.map((item, index) => (
             <div key={index} className='flex flex-col gap-y-2 md:gap-y-6'>
               <div className='flex flex-col md:flex-row md:items-center gap-x-2 md:gap-x-6'>
-                <span className='w-6 md:w-14 h-6 md:h-14 max-md:p-1 flex shrink-0 items-center justify-center bg-blue-100 rounded-sm'>
+                <span className='hidden md:w-14 h-6 md:h-14 max-md:p-1 md:flex shrink-0 items-center justify-center bg-blue-100 rounded-sm'>
                   <img src={item.icon} alt={item.title} />{' '}
                 </span>
                 <h4 className='text-[#352784] text-base md:text-2xl font-bold md:leading-[33.60px]'>
